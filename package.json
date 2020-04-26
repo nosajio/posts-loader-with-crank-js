@@ -4,14 +4,25 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@bikeshaving/crank": "^0.1.1"
+    "@bikeshaving/crank": "^0.1.1",
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.5"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@babel/preset-react": "^7.9.4"
+    "@babel/preset-react": "^7.9.4",
+    "parcel-bundler": "^1.12.4"
   },
   "scripts": {
+    "start": "parcel index.html -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslint": {
+    "settings": {
+      "react": {
+        "pragma": "createElement"
+      }
+    }
   },
   "author": "",
   "license": "ISC"
